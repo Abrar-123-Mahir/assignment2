@@ -87,7 +87,7 @@ body{
     color:#fff;
 }
 
-.logo-wrapper{
+.logowrap{
 
     position:relative;
     display:inline-block;
@@ -110,8 +110,8 @@ body{
 .mic{
 
     position:absolute;
-    width:116px;
-    height:175px;
+    width:116.67px;
+    height:175 ;
 
     left:50%;
     top:50%;
@@ -119,12 +119,12 @@ body{
     transform:translate(-50%,-50%);
 }
 
-.new-badge{
+.newbadge{
 
     position:absolute;
 
-    right:
-    top:10px;
+    right:1px;
+    top:50px;
 
     background:#19ff83;
 
@@ -142,24 +142,22 @@ body{
 
 .content h1{
 
-    font-size:62px;
-    margin-bottom:15px;
+    font-size:60px;
+    margin-bottom:8px;
 }
 
 .content p{
 
     color:#c8c2d9;
-
     font-size:16px;
-
-    margin-bottom:35px;
+    margin-bottom:25px;
 }
 
 .buttons{
 
     display:flex;
     justify-content:center;
-    gap:20px;
+    gap:8px;
 }
 
 .btn{
@@ -170,16 +168,16 @@ body{
 
     text-decoration:none;
 
-    padding:14px 24px;
+    padding:12px 20px;
 
     border-radius:40px;
 
-    font-weight:600;
+    font-weight:bolder;
 }
 
 .btn img{
 
-    width:18px;
+    width:20px;
 }
 
 .spotify{
@@ -191,9 +189,11 @@ body{
 
 .subscribe{
 
-    color:#00ff88;
-    border:2px solid #00ff88;
+    color:#00FF88;
+    border:2px solid #00FF88;
 }
+
+
 /* ======================
     About Section
 ====================== */
@@ -201,7 +201,7 @@ body{
 .about{
     width:100%;
     background:#1A0B2E;
-    padding:90px 0;
+    padding-bottom: 120px;
 }
 
 .about-container{
@@ -213,14 +213,14 @@ body{
 .about-container h2{
     color:#ffffff;
     font-size:48px;
-    font-weight:700;
-    margin-bottom:25px;
+    font-weight:bolder;
+    margin-bottom:16px;
 }
 
 .about-text{
-    color:#BFB9CF;
+    color:#FFFFFF;
     font-size:16px;
-    line-height:30px;
+    line-height:25px;
     width:70%;
     margin:0 auto 20px;
 }
@@ -244,9 +244,9 @@ body{
 }
 
 .stat-box h3{
-    color:#16FF86;
-    font-size:50px;
-    font-weight:700;
+    color:#00FF88;
+    font-size:48px;
+    font-weight:bolder;
     margin-bottom:12px;
 }
 
@@ -264,7 +264,7 @@ body{
 .features{
 
     width:100%;
-    background:#1A0B2E;
+    background:#230E3D;
     padding:100px 0;
 
 }
@@ -403,27 +403,18 @@ body{
 /* Grid */
 
 .episode-grid{
-
     display:grid;
-
     grid-template-columns:repeat(3,1fr);
-
-    gap:25px;
-
+    gap:10px;
 }
-
-/* Card */
 
 .episode-card{
-
     background:#301154;
-
     border-radius:20px;
-
     overflow:hidden;
-
+    height:500px;
+    width:380px;
 }
-
 /* Video */
 
 .episode-card iframe{
@@ -469,14 +460,11 @@ body{
 
     color:#16FF86;
     font-size:15px;
-    font-weight:600;
+    font-weight:bolder;
 
 }
 
-.time img{
 
-    width:18px;
-}
 
 /* ==========================
       Meet The Host
@@ -526,11 +514,9 @@ body{
 
 .host-image img{
 
-    width:180px;
-    height:180px;
-
+    width:200px;
+    height:200px;
     border-radius:50%;
-
     object-fit:cover;
 
 }
@@ -538,7 +524,6 @@ body{
 /* Content */
 
 .host-content{
-
     flex:1;
 
 }
@@ -546,49 +531,51 @@ body{
 .host-content h3{
 
     color:#ffffff;
-
     font-size:36px;
-
     margin-bottom:15px;
+    font-weight: bolder;
 
 }
 
 .host-content p{
-
     color:#BFB9CF;
-
     font-size:16px;
-
     line-height:28px;
-
     margin-bottom:25px;
 
 }
 
 /* Social Icons */
 
+/* Social Icons */
+
 .social-icons{
-
     display:flex;
+    align-items:center;
     gap:15px;
-
 }
 
 .social-icons a{
+    width:42px;
+    height:42px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
     text-decoration:none;
+
+    border:1px solid #5b3a82;
+    border-radius:50%;
 
 }
 
 .social-icons img{
-
-    width:35px;
-    height:35px;
-
+    width:20px;
+    height:20px;
     display:block;
-
+    object-fit:contain;
 }
-
 /* ==========================
         Footer Section
 ========================== */
@@ -599,7 +586,7 @@ body{
 
     padding:90px 0;
 
-    background-image:url("../css/images/footer-bg.png");
+    background-image:url("images/footer-bg.png");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -689,4 +676,3 @@ body{
     font-size:15px;
 
 }
-
