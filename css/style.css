@@ -9,9 +9,7 @@ body{
     background:#ffffff;
 }
 
-/* ===========================
-        Navbar
-=========================== */
+
 
 .navbar{
     width:100%;
@@ -60,21 +58,27 @@ body{
     background:linear-gradient(90deg,#FFD84E,#FF00B8);
     font-weight:700;
 }
+.menu{
+    display:none;
+}
 
-/* ===========================
-        Hero
-=========================== */
+.menu img{
+    width:24px;
+    height:24px;
+        display:block;
+    cursor:pointer;
+}
+
+
 
 .hero{
 
     width:100%;
     min-height:100vh;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
-    background-image:url("images/hero-bg.png");
+    background-image:url("../css/images/hero-bg.png");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -112,7 +116,6 @@ body{
     position:absolute;
     width:116.67px;
     height:175 ;
-
     left:50%;
     top:50%;
 
@@ -125,18 +128,12 @@ body{
 
     right:1px;
     top:50px;
-
     background:#19ff83;
-
     color:#111;
-
     padding:6px 14px;
-
     border-radius:30px;
-
     font-size:12px;
     font-weight:bold;
-
     z-index:10;
 }
 
@@ -165,13 +162,9 @@ body{
     display:flex;
     align-items:center;
     gap:10px;
-
     text-decoration:none;
-
     padding:12px 20px;
-
     border-radius:40px;
-
     font-weight:bolder;
 }
 
@@ -183,7 +176,6 @@ body{
 .spotify{
 
     color:#fff;
-
     background:linear-gradient(90deg,#FFD84E,#FF3DBA,#9F00FF);
 }
 
@@ -194,9 +186,6 @@ body{
 }
 
 
-/* ======================
-    About Section
-====================== */
 
 .about{
     width:100%;
@@ -257,9 +246,6 @@ body{
     letter-spacing:1px;
 }
 
-/* ===========================
-      Features Section
-=========================== */
 
 .features{
 
@@ -285,21 +271,16 @@ body{
 
 }
 
-/* Grid */
 
 .feature-grid{
 
     display:grid;
-
     grid-template-columns:1fr 1fr 1fr;
-
     grid-template-rows:240px 240px;
-
     gap:20px;
 
 }
 
-/* Cards */
 
 .card{
 
@@ -334,7 +315,6 @@ body{
 
 }
 
-/* Grid Positions */
 
 .card1{
 
@@ -372,9 +352,6 @@ body{
 
 }
 
-/* ==========================
-    Featured Episodes
-========================== */
 
 .episodes{
 
@@ -400,7 +377,6 @@ body{
 
 }
 
-/* Grid */
 
 .episode-grid{
     display:grid;
@@ -415,7 +391,6 @@ body{
     height:500px;
     width:380px;
 }
-/* Video */
 
 .episode-card iframe{
 
@@ -425,7 +400,6 @@ body{
 
 }
 
-/* Content */
 
 .episode-content{
 
@@ -450,7 +424,6 @@ body{
 
 }
 
-/* Time */
 
 .time{
 
@@ -466,9 +439,6 @@ body{
 
 
 
-/* ==========================
-      Meet The Host
-========================== */
 
 .host{
 
@@ -494,23 +464,18 @@ body{
 
 }
 
-/* Card */
 
 .host-card{
 
     background:#301154;
-
     border-radius:25px;
-
     padding:30px;
-
     display:flex;
     align-items:center;
     gap:35px;
 
 }
 
-/* Host Image */
 
 .host-image img{
 
@@ -521,7 +486,6 @@ body{
 
 }
 
-/* Content */
 
 .host-content{
     flex:1;
@@ -545,9 +509,6 @@ body{
 
 }
 
-/* Social Icons */
-
-/* Social Icons */
 
 .social-icons{
     display:flex;
@@ -558,13 +519,10 @@ body{
 .social-icons a{
     width:42px;
     height:42px;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
     text-decoration:none;
-
     border:1px solid #5b3a82;
     border-radius:50%;
 
@@ -576,9 +534,7 @@ body{
     display:block;
     object-fit:contain;
 }
-/* ==========================
-        Footer Section
-========================== */
+
 
 .footer{
 
@@ -586,7 +542,7 @@ body{
 
     padding:90px 0;
 
-    background-image:url("images/footer-bg.png");
+    background-image:url("../css/images/footer-bg.png");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -596,21 +552,16 @@ body{
 .footer-container{
 
     width:80%;
-
     margin:auto;
-
     text-align:center;
 
 }
 
-/* Logo */
 
 .footer-container h2{
 
     font-size:72px;
-
     font-weight:700;
-
     margin-bottom:25px;
 
 }
@@ -627,18 +578,13 @@ body{
 
 }
 
-/* Links */
 
 .footer-links{
 
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     gap:35px;
-
     margin-bottom:30px;
 
 }
@@ -646,15 +592,10 @@ body{
 .footer-links a{
 
     display:flex;
-
     align-items:center;
-
     gap:8px;
-
     text-decoration:none;
-
     color:#d2c8e7;
-
     font-size:16px;
 
 }
@@ -662,17 +603,434 @@ body{
 .footer-links img{
 
     width:18px;
-
     height:18px;
 
 }
 
-/* Copyright */
 
 .footer-container p{
 
     color:#9f96b4;
-
     font-size:15px;
+
+}
+
+
+
+@media screen and (max-width:576px){
+
+    
+
+    .navbar{
+        width:100%;
+        height:70px;
+        padding:0 20px;
+
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    .nav-logo{
+        font-size:28px;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .subscribe-btn{
+        display:none;
+    }
+
+    .menu{
+        display:block;
+    }
+
+    .menu img{
+        width:22px;
+        height:22px;
+        display:block;
+        cursor:pointer;
+    }
+
+    
+    .hero{
+        min-height:auto;
+        padding:50px 20px;
+    }
+
+    .hero-logo{
+        width:220px;
+        height:220px;
+    }
+
+    .circle{
+        width:100%;
+    }
+
+    .mic{
+        width:70px;
+        height:auto;
+    }
+
+    .newbadge{
+        top:20px;
+        right:5px;
+    }
+
+    .content h1{
+        font-size:48px;
+    }
+
+    .content p{
+        width:100%;
+        font-size:15px;
+        line-height:24px;
+    }
+
+    .buttons{
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:12px;
+    }
+
+    .btn{
+        font-size:14px;
+        padding:10px 18px;
+    }
+
+   
+
+    .about{
+        padding:70px 0;
+    }
+
+    .about-container{
+        width:90%;
+    }
+
+    .about-container h2{
+        font-size:38px;
+    }
+
+    .about-text{
+        width:100%;
+        font-size:15px;
+        line-height:26px;
+    }
+
+    .about-stats{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:30px;
+    }
+
+    .stat-box{
+        width:100%;
+    }
+
+    .stat-box h3{
+        font-size:40px;
+    }
+
+    
+
+    .features{
+        padding:70px 0;
+    }
+
+    .features-container{
+        width:90%;
+    }
+
+    .features-container h2{
+        font-size:38px;
+    }
+
+    .feature-grid{
+        grid-template-columns:1fr;
+        grid-template-rows:auto;
+        gap:20px;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5{
+        grid-column:auto;
+        grid-row:auto;
+    }
+
+    .card{
+        padding:25px;
+    }
+
+    .card h3{
+        font-size:28px;
+    }
+
+    .card p{
+        font-size:15px;
+    }
+
+   
+
+    .episodes{
+        padding:70px 0;
+    }
+
+    .episodes-container{
+        width:90%;
+    }
+
+    .episodes-container h2{
+        font-size:38px;
+    }
+
+    .episode-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .episode-card{
+        width:100%;
+        height:auto;
+    }
+
+    .episode-card iframe{
+        height:220px;
+    }
+
+    .episode-content h3{
+        font-size:28px;
+    }
+
+    .episode-content p{
+        font-size:15px;
+    }
+
+    
+
+    .host{
+        padding:70px 0;
+    }
+
+    .host-container{
+        width:90%;
+    }
+
+    .host-container h2{
+        font-size:38px;
+    }
+
+    .host-card{
+        flex-direction:column;
+        text-align:center;
+        gap:25px;
+    }
+
+    .host-image img{
+        width:170px;
+        height:170px;
+    }
+
+    .host-content h3{
+        font-size:32px;
+    }
+
+    .host-content p{
+        font-size:15px;
+    }
+
+    .social-icons{
+        justify-content:center;
+    }
+
+    
+
+     .footer{
+
+        padding:70px 0;
+
+        background-size:cover;
+        background-position:center;
+
+    }
+
+    .footer-container{
+
+        width:90%;
+
+    }
+
+
+    .footer-container h2{
+
+        font-size:56px;
+        margin-bottom:25px;
+        line-height:1;
+
+    }
+
+
+    .footer-links{
+
+        display:grid;
+
+        grid-template-columns:auto auto;
+
+        justify-content:center;
+
+        column-gap:35px;
+
+        row-gap:18px;
+
+        margin-bottom:35px;
+
+    }
+
+    .footer-links a{
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:flex-start;
+
+        gap:10px;
+
+        width:auto;
+
+        font-size:16px;
+
+        color:#d2c8e7;
+
+        white-space:nowrap;
+
+    }
+
+    .footer-links img{
+
+        width:20px;
+
+        height:20px;
+
+    }
+
+
+    .footer-container p{
+
+        font-size:15px;
+
+        line-height:1.5;
+
+        color:#9f96b4;
+
+    }
+
+}
+
+
+@media screen and (min-width:577px) and (max-width:992px){
+
+
+    .navbar{
+        padding:20px 40px;
+    }
+
+
+    .hero-logo{
+        width:300px;
+        height:300px;
+    }
+
+    .content h1{
+        font-size:52px;
+    }
+
+
+    .about-container{
+        width:90%;
+    }
+
+    .about-text{
+        width:90%;
+    }
+
+
+    .features-container{
+        width:90%;
+    }
+
+    .feature-grid{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:auto;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5{
+        grid-column:auto;
+        grid-row:auto;
+    }
+
+
+    .episodes-container{
+        width:90%;
+    }
+
+    .episode-grid{
+        grid-template-columns:1fr 1fr;
+        justify-items:center;
+        gap:20px;
+    }
+
+    .episode-card{
+        width:100%;
+        height:auto;
+    }
+
+
+    .host-container{
+        width:90%;
+    }
+
+    .host-card{
+        gap:25px;
+    }
+
+    .host-image img{
+        width:170px;
+        height:170px;
+    }
+
+
+    .footer-container{
+        width:90%;
+    }
+
+    .footer-links{
+        gap:20px;
+        flex-wrap:wrap;
+    }
+
+}
+
+
+@media screen and (min-width:577px) and (max-width:992px){
+
+
+}
+
+
+
+
+@media screen and (max-width:576px){
+
 
 }
